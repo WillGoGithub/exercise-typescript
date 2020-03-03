@@ -28,7 +28,7 @@ describe("Resistor Colors", () => {
 
     test("Throws error when not enough colors", () => {
         expect(() => new ResistorColor(["green"])).toThrowError(
-            "At least two colors need to be present"
+            "需輸入兩種顏色 !"
         )
     })
 })
