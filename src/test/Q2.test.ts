@@ -1,4 +1,4 @@
-import TwoFer from "../exam/Q2-TwoFer";
+import TwoFer from "../exam/Q2";
 
 describe('TwoFer', () => {
     it('no name given', () => {

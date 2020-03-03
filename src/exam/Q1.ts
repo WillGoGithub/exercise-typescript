@@ -1,3 +1,4 @@
+// Q1. HelloWorld
 // TODO 1. 呼叫 HelloWorld.hello() 時，回傳 "Hello, World!"
 class HelloWorld {
     static hello() {

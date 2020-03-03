@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\src\\exam\\Q3-Resistor-Color.ts",
+            "program": "${workspaceFolder}\\src\\exam\\Q1.ts",
             "preLaunchTask": "npm: build",
             "sourceMaps": true,
             "smartStep": true,

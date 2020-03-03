@@ -1,4 +1,4 @@
-import ResistorColor from "../exam/Q3-Resistor-Color";
+import ResistorColor from "../exam/Q3";
 
 describe("Resistor Colors", () => {
     test("Brown and black", () => {

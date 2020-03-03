@@ -1,3 +1,4 @@
+// Q3. Resistor-Color
 // 此程式目的為輸入兩種顏色的英文名稱，並轉化為兩位數字以便讓神秘的機器識別...
 // 透過 const resistorColor = new ResistorColor(["brown", "black"])
 // 呼叫 resistorColor.value() 回傳對應的色碼

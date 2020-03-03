@@ -1,3 +1,4 @@
+// Q2. TwoFer
 // 使用 TwoFer.twoFer() 時
 // TODO 1. 如果有傳入名稱字串，則回傳 "One for {name}, one for me.
 // TODO 2. 回傳的 name 一定必須大寫開頭
