@@ -2,7 +2,7 @@
 // TODO 1. 呼叫 HelloWorld.hello() 時，回傳 "Hello, World!"
 class HelloWorld {
     static hello() {
-        // Code here ! 從這裡開始
+        // TODO Code here ! 從這裡開始
     }
 }
 

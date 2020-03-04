@@ -11,11 +11,11 @@ class ResistorColor {
     private colors: string[];
 
     constructor(colors: string[]) {
-        // Code here ! 從這裡開始變更
+        // TODO Code here ! 從這裡開始變更
         this.colors = colors;
     }
 
-    // Code here ! 從這裡開始變更
+    // TODO Code here ! 從這裡開始變更
     value = (): number => 0;
 }
 

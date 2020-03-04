@@ -5,8 +5,9 @@
 // TODO 3. 如果沒有傳入名稱，則回傳 "One for you, one for me."
 // TODO 4. 陷阱 ! 如果有人剛好叫 You 呢 ?
 class TwoFer {
-    public static twoFer(name?: string): string {
-        // Code here ! 從這裡開始
+    // Code here ! 從這裡開始
+    public static twoFer(/* TODO Parameters go here ! 傳入參數 */): void {
+        // TODO more...
     }
 }
 
