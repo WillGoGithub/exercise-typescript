@@ -7,7 +7,7 @@ class HelloWorld {
 }
 
 // Export for test，請無視
-export default HelloWorld
+export default HelloWorld;
 
-// Use for debug 
+// Use for debug
 // console.log(HelloWorld.hello())

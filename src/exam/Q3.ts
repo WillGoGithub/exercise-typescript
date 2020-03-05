@@ -20,7 +20,7 @@ class ResistorColor {
 }
 
 // Export for test，請無視
-export default ResistorColor
+export default ResistorColor;
 
 // Use for debug
 // const resistorColor = new ResistorColor(["brown", "black"]);

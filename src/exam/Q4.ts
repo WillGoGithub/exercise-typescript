@@ -12,7 +12,7 @@ function isLeapYear(/* TODO Parameters go here ! 傳入參數 */) {
 }
 
 // Export for test，請無視
-export default isLeapYear
+export default isLeapYear;
 
 // Use for debug
 // console.log(isLeapYear(2020));

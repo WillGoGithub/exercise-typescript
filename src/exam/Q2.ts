@@ -12,7 +12,7 @@ class TwoFer {
 }
 
 // Export for test，請無視
-export default TwoFer
+export default TwoFer;
 
 // Use for debug
 // console.log(TwoFer.twoFer())
