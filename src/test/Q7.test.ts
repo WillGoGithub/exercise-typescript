@@ -1,60 +1,47 @@
-import WordCount from '../exam/Q7';
+import Acronym from '../exam/Q7';
 
-describe('Q7. WordCount', () => {
-    const words = new WordCount()
-
-    it('計算一個單字', () => {
-        const expectedCounts = new Map(Object.entries({ word: 1 }))
-        expect(words.count('word')).toEqual(expectedCounts)
+describe('Q7. Acronym', () => {
+    it('檢查 1', () => {
+        expect(Acronym.parse('Portable Network Graphics')).toEqual('PNG')
     })
 
-    it('每個單字都出現一次', () => {
-        const expectedCounts = new Map(Object.entries({ one: 1, of: 1, each: 1 }))
-        expect(words.count('one of each')).toEqual(expectedCounts)
+    it('檢查 2 其中有小寫開頭', () => {
+        expect(Acronym.parse('Ruby on Rails')).toEqual('ROR')
     })
 
-    it('綜合計算各單字出現的次數', () => {
-        const expectedCounts = new Map(Object.entries({ one: 1, fish: 4, two: 1, red: 1, blue: 1 }))
-        expect(words.count('one fish two fish red fish blue fish')).toEqual(expectedCounts)
+    it('檢查 3 相連字大寫', () => {
+        expect(Acronym.parse('HyperText Markup Language')).toEqual('HTML')
     })
 
-    it('包含標點符號計算', () => {
-        const expectedCounts = new Map(Object.entries({ car: 1, ':': 2, carpet: 1, as: 1, java: 1, 'javascript!!&@$%^&': 1 }))
-        expect(words.count('car : carpet as java : javascript!!&@$%^&')).toEqual(expectedCounts)
+    it('檢查 4 有標點符號', () => {
+        expect(Acronym.parse('First In, First Out')).toEqual('FIFO')
     })
 
-    it('包含數字計算', () => {
-        const expectedCounts = new Map(Object.entries({ testing: 2, 1: 1, 2: 1 }))
-        expect(words.count('1 2 testing testing')).toEqual(expectedCounts)
+    it('檢查 5 有 Dash', () => {
+        expect(Acronym.parse('Complementary metal-oxide semiconductor')).toEqual('CMOS')
     })
 
-    it('統一轉換為小寫計算', () => {
-        const expectedCounts = new Map(Object.entries({ go: 3 }))
-        expect(words.count('go Go GO')).toEqual(expectedCounts)
+    it('繼續檢查 1', () => {
+        expect(Acronym.parse('Application Programming Interface')).toEqual('API')
     })
 
-    it('有斷行也可以正常計算', () => {
-        const expectedCounts = new Map(Object.entries({ hello: 1, world: 1 }))
-        expect(words.count('hello\nworld')).toEqual(expectedCounts)
+    it('繼續檢查 2', () => {
+        expect(Acronym.parse('As far as I know')).toEqual('AFAIK')
     })
 
-    it('有 tab 也可以正常計算', () => {
-        const expectedCounts = new Map(Object.entries({ hello: 1, world: 1 }))
-        expect(words.count('hello\tworld')).toEqual(expectedCounts)
+    it('繼續檢查 3', () => {
+        expect(Acronym.parse('Also known as')).toEqual('AKA')
     })
 
-    it('有出現多個空白也可以正常運算', () => {
-        const expectedCounts = new Map(Object.entries({ hello: 1, world: 1 }))
-        expect(words.count('hello  world')).toEqual(expectedCounts)
+    it('繼續檢查 4', () => {
+        expect(Acronym.parse('In my Opinion')).toEqual('IMO')
     })
 
-    it('奇奇怪怪的都加進來也不影響計算', () => {
-        const expectedCounts = new Map(Object.entries({ introductory: 1, course: 1 }))
-        expect(words.count('\t\tIntroductory Course      ')).toEqual(expectedCounts)
+    it('繼續檢查 5', () => {
+        expect(Acronym.parse('Laughing out loud')).toEqual('LOL')
     })
 
-    it('物件原型的保留字也難不倒', () => {
-        const expectedCounts = new Map(Object.entries({ reserved: 1, words: 1, like: 1, constructor: 1, and: 1, tostring: 1, 'ok?': 1 }))
-        expect(words.count('reserved words like constructor and toString ok?')).toEqual(expectedCounts)
+    it('繼續檢查 6', () => {
+        expect(Acronym.parse('Oh my God')).toEqual('OMG')
     })
 })
