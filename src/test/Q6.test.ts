@@ -1,6 +1,6 @@
 import SpaceAge from '../exam/Q6';
 
-describe('Space Age', () => {
+describe('Q6. Space Age', () => {
 
     it('age in seconds', () => {
         const age = new SpaceAge(1000000)

@@ -15,4 +15,4 @@ class TwoFer {
 export default TwoFer;
 
 // Use for debug
-// console.log(TwoFer.twoFer())
+// console.log(TwoFer.twoFer());

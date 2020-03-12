@@ -10,4 +10,4 @@ class HelloWorld {
 export default HelloWorld;
 
 // Use for debug
-// console.log(HelloWorld.hello())
+// console.log(HelloWorld.hello());
