@@ -6,7 +6,7 @@
 // TODO 3. HyperText Markup Language => HTML
 // TODO 4. First In, First Out => FIFO
 // TODO 5. Complementary metal-oxide semiconductor => CMOS
-// TODO 5. 這次的呼叫方式有點不同哦 !
+// TODO 6. 這次的呼叫方式有點不同哦 !
 
 // Code here ! 從這裡開始變更 這次請自己從頭開始
 

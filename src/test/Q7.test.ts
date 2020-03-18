@@ -44,4 +44,8 @@ describe('Q7. Acronym', () => {
     it('繼續檢查 6', () => {
         expect(Acronym.parse('Oh my God')).toEqual('OMG')
     })
+
+    it('繼續檢查 7', () => {
+        expect(Acronym.parse('')).toEqual('')
+    })
 })
