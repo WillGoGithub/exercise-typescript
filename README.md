@@ -25,7 +25,7 @@ npm run test
 ```
 如果得到 FAIL 紅燈...再接再厲！
 
-## 打掃戰場 (Bata)
+## 打掃戰場
 執行以下指令進行程式檢查
 ```
 npm run lint
